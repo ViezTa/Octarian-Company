@@ -1,0 +1,812 @@
+﻿<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produk | Octarian Company</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/30f6dd0952.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="products-page">
+    
+    <nav class="navbar navbar-expand-lg border-bottom bg-black">
+        <div class="container py-2">
+            <a href="index.html" class="navbar-brand text-light fw-bold fs-3">Octarian Company</a>
+            <div class="d-flex align-items-center gap-2 ms-auto">
+                <a href="pages/product/keranjang.html" class="cart-btn" aria-label="Keranjang">
+                    <i class="fas fa-shopping-cart"></i><span id="cart-count">0</span>
+                </a>
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#productNav" aria-label="Buka navigasi">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse justify-content-end" id="productNav">
+                <ul class="navbar-nav gap-2 mt-3 mt-lg-0">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Beranda</a></li>
+                    <li class="nav-item"><a href="index.html#about" class="nav-link">Tentang Kami</a></li>
+                    <li class="nav-item"><a href="index.html#blog" class="nav-link">Artikel</a></li>
+                    <li class="nav-item"><a href="#catalog" class="nav-link">Katalog</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-dark text-light">
+        <div class="container py-5">
+            <div class="row align-items-center g-4">
+                <div class="col-lg-7">
+                    <span class="badge bg-warning text-dark mb-3">Koleksi Pilihan</span>
+                    <h1>Temukan gear untuk suara terbaikmu.</h1>
+                    <p>Instrumen dan aksesori pilihan untuk latihan, panggung, hingga studio. Setiap produk kami dipilih untuk kualitas, performa, dan kenyamanan bermain.</p>
+                    <div class="d-flex flex-wrap gap-2 mt-4">
+                        <a href="#guitar" class="btn btn-light rounded-pill px-4">Gitar</a>
+                        <a href="#drums" class="btn btn-outline-light rounded-pill px-4">Drum & Cymbal</a>
+                        <a href="#bass" class="btn btn-outline-light rounded-pill px-4">Bass</a>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="hero-panel">
+                        <div class="panel-header">Best seller minggu ini</div>
+                        <h3>Gibson Les Paul Standard</h3>
+                        <p>Warm tone, sustain panjang, dan build quality yang premium untuk setiap setlist.</p>
+                        <div class="price-row">
+                            <span>Rp 48.000.000</span>
+                            <span class="small-badge">Ready stok</span>
+                        </div>
+                        <a href="pages/product/product-detail.html" class="btn btn-warning rounded-pill px-4 mt-3">Lihat detail</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <main class="container py-5" id="catalog">
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end gap-2 mb-4">
+            <div>
+                <span class="text-uppercase small fw-bold text-warning">Katalog</span>
+                <h2 class="section-title mb-0">Produk unggulan</h2>
+            </div>
+            <p class="text-muted mb-0">Pilih produk, lalu tambahkan ke keranjang.</p>
+        </div>
+
+        <div class="promo-strip mb-4">
+            <div class="promo-copy">
+                <span>Promo musik</span>
+                <h3>Bonus aksesori premium untuk pembelian gitar & bass.</h3>
+            </div>
+            <a href="#guitar" class="btn btn-dark rounded-pill">Jelajahi koleksi</a>
+        </div>
+
+        <!--artist products-->
+    <!--artist products-->
+    <div class="w-100 bg-black text-light mb-5" id="artist">
+        <div class="container pt-5 pb-5">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h2 class="mb-0">Artist Products</h2>
+            </div>
+    
+            <div class="row g-4 mb-5">
+                <!-- Categories -->
+                <div class="col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm overflow-hidden position-relative" onclick="window.location.href='pages/product/product-detail.html';"
+                        style="cursor: pointer;">
+                        <span class="badge bg-danger position-absolute top-2 end-2" style="z-index: 10;">DISKON
+                            20%</span>
+                        <img src="gambar/Avenged_Sevenfold_cover_2007.jpg" class="card-img-top img-fluid"
+                            alt="Avenged Sevenfold" style="height: 300px; object-fit: cover;">
+                        <div class="card-body bg-light text-black p-3">
+                            <p class="text-muted small mb-1">Signature ++</p>
+                            <h5 class="card-title mb-2">Avenged Sevenfold</h5>
+                            <p class="card-text">Discover the signature models from the legendary metal band.</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Product Cards  -->
+                <div class="col-lg-9">
+                    <div class="row g-3">
+                        <div class="col">
+                            <div class="card h-100 border-0 shadow-sm overflow-hidden position-relative">
+                                <span class="badge bg-danger position-absolute top-2 end-2" style="z-index: 10;">DISKON
+                                    20%</span>
+                                <img src="gambar/syncostumes.jpg" class="card-img-top img-fluid"
+                                    alt="Synyster Gates Schecter Costume S Diamond"
+                                    style="height: 200px; object-fit: cover; cursor: pointer;" onclick="window.location.href='pages/product/product-detail.html';">
+                                <div class="card-body p-3">
+                                    <h6 class="card-title mb-1" style="cursor: pointer;" onclick="window.location.href='pages/product/product-detail.html';">Synyster Gates
+                                        Schecter Costume S
+                                        Diamond</h6>
+                                    <p class="text-danger fw-bold small mb-1">Rp 72.000.000</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <p class="mb-0"><s class="text-muted small">Rp 85.000.000</s></p>
+                                        <button type="button" onclick="window.location.href='pages/product/product-detail.html';"
+                                            class="badge bg-success border-0 me-2 text-decoration-none pb-2 px-3"
+                                            style="cursor:pointer">buy now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col">
+                            <div class="card h-100 border-0 shadow-sm overflow-hidden position-relative">
+                                <span class="badge bg-danger position-absolute top-2 end-2" style="z-index: 10;">DISKON
+                                    20%</span>
+                                <img src="gambar/synaccoustic.jpg" class="card-img-top img-fluid"
+                                    alt="Synyster Gates accoustic"
+                                    style="height: 200px; object-fit: cover; cursor: pointer;" onclick="window.location.href='pages/product/product-detail.html';">
+                                <div class="card-body p-3">
+                                    <h6 class="card-title mb-1" style="cursor: pointer;" onclick="window.location.href='pages/product/product-detail.html';">
+                                        SchecterSynyster Gates Acoustic</h6>
+                                    <p class="text-danger fw-bold small mb-1">Rp 64.000.000</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <p class="mb-0"><s class="text-muted small">Rp 76.000.000</s></p>
+                                        <button type="button" onclick="window.location.href='pages/product/product-detail.html';"
+                                            class="badge bg-success border-0 me-2 text-decoration-none pb-2 px-3"
+                                            style="cursor:pointer">buy now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col">
+                            <div class="card h-100 border-0 shadow-sm overflow-hidden position-relative">
+                                <span class="badge bg-danger position-absolute top-2 end-2" style="z-index: 10;">DISKON
+                                    20%</span>
+                                <img src="gambar/Zacky-Vengeance-Custom-6661-900a.jpg" class="card-img-top img-fluid"
+                                    alt="Zacky Vengeance Custom 6661-900a"
+                                    style="height: 200px; object-fit: cover; cursor: pointer;" onclick="window.location.href='pages/product/product-detail.html';">
+                                <div class="card-body p-3">
+                                    <h6 class="card-title mb-1" style="cursor: pointer;" onclick="window.location.href='pages/product/product-detail.html';">Zacky Vengeance
+                                        Custom 6661-900a</h6>
+                                    <p class="text-danger fw-bold small mb-1">Rp 58.000.000</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <p class="mb-0"><s class="text-muted small">Rp 68.000.000</s></p>
+                                        <button type="button" onclick="window.location.href='pages/product/product-detail.html';"
+                                            class="badge bg-success border-0 me-2 text-decoration-none pb-2 px-3"
+                                            style="cursor:pointer">buy now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 border-0 shadow-sm overflow-hidden position-relative">
+                                <span class="badge bg-danger position-absolute top-2 end-2" style="z-index: 10;">DISKON
+                                    20%</span>
+                                <img src="gambar/schecter-signature-johnny-christ-bass-guitar-xl.webp"
+                                    class="card-img-top img-fluid" alt="Schecter Signature Johnny Christ Bass Guitar XL"
+                                    style="height: 200px; object-fit: cover; cursor: pointer;" onclick="window.location.href='pages/product/product-detail.html';">
+                                <div class="card-body p-3">
+                                    <h6 class="card-title mb-1" style="cursor: pointer;" onclick="window.location.href='pages/product/product-detail.html';">Schecter
+                                        Signature Johnny Christ
+                                        Bass Guitar XL</h6>
+                                    <p class="text-danger fw-bold small mb-1">Rp 49.000.000</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <p class="mb-0"><s class="text-muted small">Rp 58.000.000</s></p>
+                                        <button type="button" onclick="window.location.href='pages/product/product-detail.html';"
+                                            class="badge bg-success border-0 me-2 text-decoration-none pb-2 px-3"
+                                            style="cursor:pointer">buy now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+    
+            <div class="row g-4">
+                <!-- Featured Product -->
+                <div class="col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm overflow-hidden position-relative" onclick="window.location.href='pages/product/product-detail.html';"
+                        style="cursor: pointer;">
+                        <span class="badge bg-danger position-absolute top-2 end-2" style="z-index: 10;">DISKON
+                            20%</span>
+                        <img src="gambar/Metallica.jpg" class="card-img-top img-thumbnail" alt="Metallica"
+                            style="height: 300px; object-fit: cover;">
+                        <div class="card-body bg-light text-black p-3">
+                            <p class="text-muted small mb-1">Signature ++</p>
+                            <h5 class="card-title mb-2">Metallica</h5>
+                            <p class="card-text">Discover the signature models from the legendary metal band.</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Product Cards  -->
+                <div class="col-lg-9">
+                    <div class="row g-3">
+    
+                        <div class="col">
+                            <div class="card h-100 border-0 shadow-sm overflow-hidden position-relative">
+                                <span class="badge bg-danger position-absolute top-2 end-2" style="z-index: 10;">DISKON
+                                    20%</span>
+                                <img src="gambar/esp-custom-shop-kh-2-kirk-hammett-electric-guitar-purple-sparkle-1_1600x.webp"
+                                    class="card-img-top" alt="Kirk Hammett Electric Guitar"
+                                    style="height: 200px; object-fit: cover; cursor: pointer;" onclick="window.location.href='pages/product/product-detail.html';">
+                                <div class="card-body p-3">
+                                    <h6 class="card-title mb-1" style="cursor: pointer;" onclick="window.location.href='pages/product/product-detail.html';">ESP KH-602 Kirk
+                                        Hammett</h6>
+                                    <p class="text-danger fw-bold small mb-1">Rp 68.000.000</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <p class="mb-0"><s class="text-muted small">Rp 80.000.000</s></p>
+                                        <button type="button" onclick="window.location.href='pages/product/product-detail.html';"
+                                            class="badge bg-success border-0 me-2 text-decoration-none pb-2 px-3"
+                                            style="cursor:pointer">buy now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col">
+                            <div class="card h-100 border-0 shadow-sm overflow-hidden position-relative">
+                                <span class="badge bg-danger position-absolute top-2 end-2" style="z-index: 10;">DISKON
+                                    20%</span>
+                                <img src="gambar/Gemini_Generated_Image_glaxdrglaxdrglax.png" class="card-img-top img"
+                                    alt="James Hetfield Acoustic" style="height: 200px; object-fit: cover; cursor: pointer;"
+                                    onclick="window.location.href='pages/product/product-detail.html';">
+                                <div class="card-body p-3">
+                                    <h6 class="card-title mb-1" style="cursor: pointer;" onclick="window.location.href='pages/product/product-detail.html';">James Hetfield
+                                        signature</h6>
+                                    <p class="text-danger fw-bold small mb-1">Rp 57.000.000</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <p class="mb-0"><s class="text-muted small">Rp 69.000.000</s></p>
+                                        <button type="button" onclick="window.location.href='pages/product/product-detail.html';"
+                                            class="badge bg-success border-0 me-2 text-decoration-none pb-2 px-3"
+                                            style="cursor:pointer">buy now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col">
+                            <div class="card h-100 border-0 shadow-sm overflow-hidden position-relative">
+                                <span class="badge bg-danger position-absolute top-2 end-2" style="z-index: 10;">DISKON
+                                    20%</span>
+                                <img src="gambar/tamalars.webp" class="card-img-top img-fluid" alt="Tama starclassic"
+                                    style="height: 200px; object-fit: cover; cursor: pointer;" onclick="window.location.href='pages/product/product-detail.html';">
+                                <div class="card-body p-3">
+                                    <h6 class="card-title mb-1" style="cursor: pointer;" onclick="window.location.href='pages/product/product-detail.html';">Tama
+                                        starclassic Lars Ulrich signature
+                                    </h6>
+                                    <p class="text-danger fw-bold small mb-1">Rp 84.000.000</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <p class="mb-0"><s class="text-muted small">Rp 95.000.000</s></p>
+                                        <button type="button" onclick="window.location.href='pages/product/product-detail.html';"
+                                            class="badge bg-success border-0 me-2 text-decoration-none pb-2 px-3"
+                                            style="cursor:pointer">buy now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--Cymbal-->
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Discover up to your hand</h1>
+    </div>
+    
+    
+    <!--Product Cards main content-->
+    <section class="container py-5 mx-auto mb-5" id="product-cards">
+        <div
+            class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center mb-4 gap-3">
+            <div class="mb-5">
+                <h2 class="section-title mb-1">Produk Lainnya</h2>
+                <p class="mb-0 text-muted">Pilihan terbaik dari Octarian Company, simpel dan mudah untuk dilihat.</p>
+            </div>
+        </div>
+    
+        <div class="row g-4 mb-5 pb-5" id="cymbal">
+            <!-- Category -->
+            <div class="col-lg-3">
+                <div class="card h-100 border-0 shadow-sm overflow-hidden position-relative">
+                    <img src="gambar/cymbalss.jpg" class="card-img-top img-fluid" alt="Cymbal"
+                        style="height: 300px; object-fit: cover;">
+                    <div class="card-body bg-light text-black p-3">
+                        <p class="text-muted small mb-1">Cymbal</p>
+                        <h5 class="card-title mb-2">Cymbal</h5>
+                        <p class="card-text">Premium quality cymbal for professional musicians.</p>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Product Cards  -->
+            <div class="col-lg-9">
+                <div class="row g-3">
+                    <div class="col-md-4 col">
+                        <div class="card h-100 border-0 shadow-sm overflow-hidden position-relative">
+                            <span class="badge bg-danger position-absolute top-2 end-2" style="z-index: 10;">DISKON
+                                20%</span>
+                            <img src="gambar/B22DAR_web_thumbnail.webp" class="card-img-top img-fluid"
+                                alt="Meinl B22DAR Crash" style="height: 300px; object-fit: cover; cursor: pointer;"
+                                onclick="window.location.href='pages/product/product-detail.html';">
+                            <div class="card-body p-3">
+                                <h6 class="card-title mb-1" style="cursor: pointer;" onclick="window.location.href='pages/product/product-detail.html';">Meinl B22DAR Crash
+                                </h6>
+                                <p class="text-danger fw-bold small mb-1">Rp 8.500.000</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p class="mb-0"><s class="text-muted small">Rp 10.500.000</s></p>
+                                    <button type="button" onclick="window.location.href='pages/product/product-detail.html';"
+                                        class="badge bg-success border-0 me-2 text-decoration-none pb-2 px-3"
+                                        style="cursor:pointer">buy now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-md-4 col">
+                        <div class="card h-100 border-0 shadow-sm overflow-hidden position-relative">
+                            <span class="badge bg-danger position-absolute top-2 end-2" style="z-index: 10;">DISKON
+                                20%</span>
+                            <img src="gambar/meinldark.jpg" class="card-img-top img-fluid" alt="Meinl Dark Cymbal"
+                                style="height: 300px; object-fit: cover; cursor: pointer;" onclick="window.location.href='pages/product/product-detail.html';">
+                            <div class="card-body p-3">
+                                <h6 class="card-title mb-1" style="cursor: pointer;" onclick="window.location.href='pages/product/product-detail.html';">Meinl Dark Cymbal
+                                </h6>
+                                <p class="text-danger fw-bold small mb-1">Rp 6.800.000</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p class="mb-0"><s class="text-muted small">Rp 8.200.000</s></p>
+                                    <button type="button" onclick="window.location.href='pages/product/product-detail.html';"
+                                        class="badge bg-success border-0 me-2 text-decoration-none pb-2 px-3"
+                                        style="cursor:pointer">buy now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-md-4 col">
+                        <div class="card h-100 border-0 shadow-sm overflow-hidden position-relative">
+                            <span class="badge bg-danger position-absolute top-2 end-2" style="z-index: 10;">DISKON
+                                20%</span>
+                            <img src="gambar/meinlride.webp" class="card-img-top img-fluid" alt="Meinl Ride Cymbal"
+                                style="height: 300px; object-fit: cover; cursor: pointer;" onclick="window.location.href='pages/product/product-detail.html';">
+                            <div class="card-body p-3">
+                                <h6 class="card-title mb-1" style="cursor: pointer;" onclick="window.location.href='pages/product/product-detail.html';">Meinl Byzance Ride
+                                    Cymbal</h6>
+                                <p class="text-danger fw-bold small mb-1">Rp 11.200.000</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p class="mb-0"><s class="text-muted small">Rp 13.500.000</s></p>
+                                    <button type="button" onclick="window.location.href='pages/product/product-detail.html';"
+                                        class="badge bg-success border-0 me-2 text-decoration-none pb-2 px-3"
+                                        style="cursor:pointer">buy now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col">
+                        <div class="card h-100 border-0 shadow-sm overflow-hidden position-relative">
+                            <span class="badge bg-danger position-absolute top-2 end-2" style="z-index: 10;">DISKON
+                                20%</span>
+                            <img src="gambar/meinlcrash.webp" class="card-img-top img-fluid" alt="Meinl Crash Cymbal"
+                                style="height: 300px; object-fit: cover; cursor: pointer;" onclick="window.location.href='pages/product/product-detail.html';">
+                            <div class="card-body p-3">
+                                <h6 class="card-title mb-1" style="cursor: pointer;" onclick="window.location.href='pages/product/product-detail.html';">Meinl Crash Cymbal
+                                </h6>
+                                <p class="text-danger fw-bold small mb-1">Rp 7.500.000</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p class="mb-0"><s class="text-muted small">Rp 9.000.000</s></p>
+                                    <button type="button" onclick="window.location.href='pages/product/product-detail.html';"
+                                        class="badge bg-success border-0 me-2 text-decoration-none pb-2 px-3"
+                                        style="cursor:pointer">buy now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col">
+                        <div class="card h-100 border-0 shadow-sm overflow-hidden position-relative">
+                            <span class="badge bg-danger position-absolute top-2 end-2" style="z-index: 10;">DISKON
+                                20%</span>
+                            <img src="gambar/CC22DUR.webp" class="card-img-top img-fluid"
+                                alt="Meinl CC22DUR Dual Ride Costume"
+                                style="height: 300px; object-fit: cover; cursor: pointer;" onclick="window.location.href='pages/product/product-detail.html';">
+                            <div class="card-body p-3">
+                                <h6 class="card-title mb-1" style="cursor: pointer;" onclick="window.location.href='pages/product/product-detail.html';">Meinl CC22DUR Dual
+                                    Ride Costume</h6>
+                                <p class="text-danger fw-bold small mb-1">Rp 9.300.000</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p class="mb-0"><s class="text-muted small">Rp 11.000.000</s></p>
+                                    <button type="button" onclick="window.location.href='pages/product/product-detail.html';"
+                                        class="badge bg-success border-0 me-2 text-decoration-none pb-2 px-3"
+                                        style="cursor:pointer">buy now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+        </div>
+        <!--E-Kit-->
+        <div class="row g-4 mb-5" id="e-kit">
+            <!-- Featured Product -->
+            <div class="col-lg-3">
+                <div class="card h-100 border-0 shadow-sm overflow-hidden position-relative">
+                    <img src="gambar/yamahapad.jpe" class="card-img-top img-fluid" alt="E-Kit"
+                        style="height: 300px; object-fit: cover;">
+                    <div class="card-body bg-light text-black p-3">
+                        <p class="text-muted small mb-1">Drum kit</p>
+                        <h5 class="card-title mb-2">E-Kit</h5>
+                        <p class="card-text">Premium quality electronic drum kit with professional features.</p>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Product Cards  -->
+            <div class="col-lg-9">
+                <div class="row g-3">
+                    <div class="col">
+                        <div class="card h-100 border-0 shadow-sm overflow-hidden position-relative">
+                            <span class="badge bg-danger position-absolute top-2 end-2" style="z-index: 10;">DISKON
+                                20%</span>
+                            <img src="gambar/YAMAHADTX452K.webp" class="card-img-top img-fluid" alt="Yamaha DTX452K"
+                                style="height: 300px; object-fit: cover; cursor: pointer;" onclick="window.location.href='pages/product/product-detail.html';">
+                            <div class="card-body p-3">
+                                <h6 class="card-title mb-1" style="cursor: pointer;" onclick="window.location.href='pages/product/product-detail.html';">Yamaha DTX452K</h6>
+                                <p class="text-danger fw-bold small mb-1">Rp 18.500.000</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p class="mb-0"><s class="text-muted small">Rp 22.000.000</s></p>
+                                    <button type="button" onclick="window.location.href='pages/product/product-detail.html';"
+                                        class="badge bg-success border-0 me-2 text-decoration-none pb-2 px-3"
+                                        style="cursor:pointer">buy now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col">
+                        <div class="card h-100 border-0 shadow-sm overflow-hidden position-relative">
+                            <span class="badge bg-danger position-absolute top-2 end-2" style="z-index: 10;">DISKON
+                                20%</span>
+                            <img src="gambar/zildjianekit.webp" class="card-img-top img-fluid" alt="Zildjian E-Kit"
+                                style="height: 300px; object-fit: cover; cursor: pointer;" onclick="window.location.href='pages/product/product-detail.html';">
+                            <div class="card-body p-3">
+                                <h6 class="card-title mb-1" style="cursor: pointer;" onclick="window.location.href='pages/product/product-detail.html';">Zildjian E-Kit</h6>
+                                <p class="text-danger fw-bold small mb-1">Rp 24.000.000</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p class="mb-0"><s class="text-muted small">Rp 28.000.000</s></p>
+                                    <button type="button" onclick="window.location.href='pages/product/product-detail.html';"
+                                        class="badge bg-success border-0 me-2 text-decoration-none pb-2 px-3"
+                                        style="cursor:pointer">buy now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col">
+                        <div class="card h-100 border-0 shadow-sm overflow-hidden position-relative">
+                            <span class="badge bg-danger position-absolute top-2 end-2" style="z-index: 10;">DISKON
+                                20%</span>
+                            <img src="gambar/TDX-22II.webp" class="card-img-top img-fluid" alt="TDX-22II"
+                                style="height: 300px; object-fit: cover; cursor: pointer;" onclick="window.location.href='pages/product/product-detail.html';">
+                            <div class="card-body p-3">
+                                <h6 class="card-title mb-1" style="cursor: pointer;" onclick="window.location.href='pages/product/product-detail.html';">Aroma TDX-22II</h6>
+                                <p class="text-danger fw-bold small mb-1">Rp 16.000.000</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p class="mb-0"><s class="text-muted small">Rp 19.000.000</s></p>
+                                    <button type="button" onclick="window.location.href='pages/product/product-detail.html';"
+                                        class="badge bg-success border-0 me-2 text-decoration-none pb-2 px-3"
+                                        style="cursor:pointer">buy now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 border-0 shadow-sm overflow-hidden position-relative">
+                            <span class="badge bg-danger position-absolute top-2 end-2" style="z-index: 10;">DISKON
+                                20%</span>
+                            <img src="gambar/donnerbeat.jpg" class="card-img-top img-fluid" alt="Donner Beat"
+                                style="height: 300px; object-fit: cover; cursor: pointer;" onclick="window.location.href='pages/product/product-detail.html';">
+                            <div class="card-body p-3">
+                                <h6 class="card-title mb-1" style="cursor: pointer;" onclick="window.location.href='pages/product/product-detail.html';">Donner Beat</h6>
+                                <p class="text-danger fw-bold small mb-1">Rp 10.800.000</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p class="mb-0"><s class="text-muted small">Rp 12.500.000</s></p>
+                                    <button type="button" onclick="window.location.href='pages/product/product-detail.html';"
+                                        class="badge bg-success border-0 me-2 text-decoration-none pb-2 px-3"
+                                        style="cursor:pointer">buy now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 border-0 shadow-sm overflow-hidden position-relative">
+                            <span class="badge bg-danger position-absolute top-2 end-2" style="z-index: 10;">DISKON
+                                20%</span>
+                            <img src="gambar/nuxdm3.jpg" class="card-img-top img-fluid" alt="Nux DM3"
+                                style="height: 300px; object-fit: cover; cursor: pointer;" onclick="window.location.href='pages/product/product-detail.html';">
+                            <div class="card-body p-3">
+                                <h6 class="card-title mb-1" style="cursor: pointer;" onclick="window.location.href='pages/product/product-detail.html';">Nux DM3</h6>
+                                <p class="text-danger fw-bold small mb-1">Rp 12.000.000</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p class="mb-0"><s class="text-muted small">Rp 14.000.000</s></p>
+                                    <button type="button" onclick="window.location.href='pages/product/product-detail.html';"
+                                        class="badge bg-success border-0 me-2 text-decoration-none pb-2 px-3"
+                                        style="cursor:pointer">buy now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 border-0 shadow-sm overflow-hidden position-relative">
+                            <span class="badge bg-danger position-absolute top-2 end-2" style="z-index: 10;">DISKON
+                                20%</span>
+                            <img src="gambar/Roland.jpg" class="card-img-top img-fluid" alt="Roland"
+                                style="height: 300px; object-fit: cover; cursor: pointer;" onclick="window.location.href='pages/product/product-detail.html';">
+                            <div class="card-body p-3">
+                                <h6 class="card-title mb-1" style="cursor: pointer;" onclick="window.location.href='pages/product/product-detail.html';">Roland </h6>
+                                <p class="text-danger fw-bold small mb-1">Rp 22.000.000</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p class="mb-0"><s class="text-muted small">Rp 25.000.000</s></p>
+                                    <button type="button" onclick="window.location.href='pages/product/product-detail.html';"
+                                        class="badge bg-success border-0 me-2 text-decoration-none pb-2 px-3"
+                                        style="cursor:pointer">buy now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+        </div>
+        <!--Guitar-->
+        <div class="row g-4 mb-5" id="guitar">
+            <!-- Featured Product -->
+            <div class="col-lg-3">
+                <div class="card h-100 border-0 shadow-sm overflow-hidden position-relative">
+                    <img src="gambar/Gibson-emblem.jpg" class="card-img-top img-fluid" alt="guitar"
+                        style="height: 200px; object-fit: cover;">
+                    <div class="card-body bg-light text-black p-3">
+                        <p class="text-muted small mb-1">Guitar</p>
+                        <h5 class="card-title mb-2">Gibson</h5>
+                        <p class="card-text">Premium quality electric guitar with exceptional sound and build.</p>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Product Cards  -->
+            <div class="col-lg-9">
+                <div class="row g-3">
+                    <div class="col">
+                        <div class="card h-100 border-0 shadow-sm overflow-hidden position-relative">
+                            <span class="badge bg-danger position-absolute top-2 end-2" style="z-index: 10;">DISKON
+                                20%</span>
+                            <img src="gambar/gibson-sg-classic-xl.webp" class="card-img-top img-fluid"
+                                alt="Gibson SG Classic" style="height: 200px; object-fit: cover; cursor: pointer;"
+                                onclick="window.location.href='pages/product/product-detail.html';">
+                            <div class="card-body p-3">
+                                <h6 class="card-title mb-1" style="cursor: pointer;" onclick="window.location.href='pages/product/product-detail.html';">Gibson SG Classic
+                                </h6>
+                                <p class="text-danger fw-bold small mb-1">Rp 58.000.000</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p class="mb-0"><s class="text-muted small">Rp 68.000.000</s></p>
+                                    <button type="button" onclick="window.location.href='pages/product/product-detail.html';"
+                                        class="badge bg-success border-0 me-2 text-decoration-none pb-2 px-3"
+                                        style="cursor:pointer">buy now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col">
+                        <div class="card h-100 border-0 shadow-sm overflow-hidden position-relative">
+                            <span class="badge bg-danger position-absolute top-2 end-2" style="z-index: 10;">DISKON
+                                20%</span>
+                            <img src="gambar/gibson-flying-v-electric-guitar-xl.webp" class="card-img-top img-fluid"
+                                alt="Gibson Flying V" style="height: 200px; object-fit: cover; cursor: pointer;"
+                                onclick="window.location.href='pages/product/product-detail.html';">
+                            <div class="card-body p-3">
+                                <h6 class="card-title mb-1" style="cursor: pointer;" onclick="window.location.href='pages/product/product-detail.html';">Gibson Flying V
+                                </h6>
+                                <p class="text-danger fw-bold small mb-1">Rp 72.000.000</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p class="mb-0"><s class="text-muted small">Rp 85.000.000</s></p>
+                                    <button type="button" onclick="window.location.href='pages/product/product-detail.html';"
+                                        class="badge bg-success border-0 me-2 text-decoration-none pb-2 px-3"
+                                        style="cursor:pointer">buy now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col">
+                        <div class="card h-100 border-0 shadow-sm overflow-hidden position-relative">
+                            <span class="badge bg-danger position-absolute top-2 end-2" style="z-index: 10;">DISKON
+                                20%</span>
+                            <img src="gambar/gibson-les-paul-standard-electric-guitar-xl.webp"
+                                class="card-img-top img-fluid" alt="Gibson Les Paul Standard"
+                                style="height: 200px; object-fit: cover; cursor: pointer;" onclick="window.location.href='pages/product/product-detail.html';">
+                            <div class="card-body p-3">
+                                <h6 class="card-title mb-1" style="cursor: pointer;" onclick="window.location.href='pages/product/product-detail.html';">Gibson Les Paul
+                                    Standard</h6>
+                                <p class="text-danger fw-bold small mb-1">Rp 95.000.000</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p class="mb-0"><s class="text-muted small">Rp 110.000.000</s></p>
+                                    <button type="button" onclick="window.location.href='pages/product/product-detail.html';"
+                                        class="badge bg-success border-0 me-2 text-decoration-none pb-2 px-3"
+                                        style="cursor:pointer">buy now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 border-0 shadow-sm overflow-hidden position-relative">
+                            <span class="badge bg-danger position-absolute top-2 end-2" style="z-index: 10;">DISKON
+                                20%</span>
+                            <img src="gambar/Gibson-ES-main.jpg" class="card-img-top img-fluid" alt="Gibson ES-335"
+                                style="height: 200px; object-fit: cover; cursor: pointer;" onclick="window.location.href='pages/product/product-detail.html';">
+                            <div class="card-body p-3">
+                                <h6 class="card-title mb-1" style="cursor: pointer;" onclick="window.location.href='pages/product/product-detail.html';">Gibson ES-335</h6>
+                                <p class="text-danger fw-bold small mb-1">Rp 108.000.000</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p class="mb-0"><s class="text-muted small">Rp 125.000.000</s></p>
+                                    <button type="button" onclick="window.location.href='pages/product/product-detail.html';"
+                                        class="badge bg-success border-0 me-2 text-decoration-none pb-2 px-3"
+                                        style="cursor:pointer">buy now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <!--Bass-->
+        <div class="row g-4 mb-5" id="bass">
+            <!-- Featured Product -->
+            <div class="col-lg-3">
+                <div class="card h-100 border-0 shadow-sm overflow-hidden position-relative">
+                    <img src="gambar/GL-USA-CLF-Research-L-2500.-Purpleburst-over-Swamp-Ash-Maple-fingerboard-2.jpg"
+                        class="card-img-top img-fluid" alt="bass" style="height: 300px; object-fit: cover;">
+                    <div class="card-body bg-light text-black p-3">
+                        <p class="text-muted small mb-1">Bass</p>
+                        <h5 class="card-title mb-2">Bass</h5>
+                        <p class="card-text">Premium quality bass guitar for professional musicians.</p>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Product Cards  -->
+            <div class="col-lg-9">
+                <div class="row g-3">
+                    <div class="col">
+                        <div class="card h-100 border-0 shadow-sm overflow-hidden position-relative">
+                            <span class="badge bg-danger position-absolute top-2 end-2" style="z-index: 10;">DISKON
+                                20%</span>
+                            <img src="gambar/CortBass.jpg" class="card-img-top img-fluid" alt="Cort Bass"
+                                style="height: 300px; object-fit: cover; cursor: pointer;" onclick="window.location.href='pages/product/product-detail.html';">
+                            <div class="card-body p-3">
+                                <h6 class="card-title mb-1" style="cursor: pointer;" onclick="window.location.href='pages/product/product-detail.html';">Cort Bass</h6>
+                                <p class="text-danger fw-bold small mb-1">Rp 8.500.000</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p class="mb-0"><s class="text-muted small">Rp 10.500.000</s></p>
+                                    <button type="button" onclick="window.location.href='pages/product/product-detail.html';"
+                                        class="badge bg-success border-0 me-2 text-decoration-none pb-2 px-3"
+                                        style="cursor:pointer">buy now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col">
+                        <div class="card h-100 border-0 shadow-sm overflow-hidden position-relative">
+                            <span class="badge bg-danger position-absolute top-2 end-2" style="z-index: 10;">DISKON
+                                20%</span>
+                            <img src="gambar/BassYamaha.jpg" class="card-img-top img-fluid" alt="Yamaha Bass"
+                                style="height: 300px; object-fit: cover; cursor: pointer;" onclick="window.location.href='pages/product/product-detail.html';">
+                            <div class="card-body p-3">
+                                <h6 class="card-title mb-1" style="cursor: pointer;" onclick="window.location.href='pages/product/product-detail.html';">Yamaha Bass</h6>
+                                <p class="text-danger fw-bold small mb-1">Rp 10.500.000</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p class="mb-0"><s class="text-muted small">Rp 12.500.000</s></p>
+                                    <button type="button" onclick="window.location.href='pages/product/product-detail.html';"
+                                        class="badge bg-success border-0 me-2 text-decoration-none pb-2 px-3"
+                                        style="cursor:pointer">buy now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col">
+                        <div class="card h-100 border-0 shadow-sm overflow-hidden position-relative">
+                            <span class="badge bg-danger position-absolute top-2 end-2" style="z-index: 10;">DISKON
+                                20%</span>
+                            <img src="gambar/Schecter-C-4-Plus-Bass-Guitar-in-Ocean-Blue-Burst_900x.webp"
+                                class="card-img-top img-fluid" alt="Schecter C-4 Plus Bass Guitar"
+                                style="height: 300px; object-fit: cover; cursor: pointer;" onclick="window.location.href='pages/product/product-detail.html';">
+                            <div class="card-body p-3">
+                                <h6 class="card-title mb-1" style="cursor: pointer;" onclick="window.location.href='pages/product/product-detail.html';">Schecter C-4 Plus
+                                    Bass Guitar</h6>
+                                <p class="text-danger fw-bold small mb-1">Rp 18.500.000</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p class="mb-0"><s class="text-muted small">Rp 22.000.000</s></p>
+                                    <button type="button" onclick="window.location.href='pages/product/product-detail.html';"
+                                        class="badge bg-success border-0 me-2 text-decoration-none pb-2 px-3"
+                                        style="cursor:pointer">buy now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 border-0 shadow-sm overflow-hidden position-relative">
+                            <span class="badge bg-danger position-absolute top-2 end-2" style="z-index: 10;">DISKON
+                                20%</span>
+                            <img src="gambar/ibanezbass.jpg" class="card-img-top img-fluid" alt="Ibanez Bass"
+                                style="height: 300px; object-fit: cover; cursor: pointer;" onclick="window.location.href='pages/product/product-detail.html';">
+                            <div class="card-body p-3">
+                                <h6 class="card-title mb-1" style="cursor: pointer;" onclick="window.location.href='pages/product/product-detail.html';">Ibanez Bass</h6>
+                                <p class="text-danger fw-bold small mb-1">Rp 13.500.000</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p class="mb-0"><s class="text-muted small">Rp 16.000.000</s></p>
+                                    <button type="button" onclick="window.location.href='pages/product/product-detail.html';"
+                                        class="badge bg-success border-0 me-2 text-decoration-none pb-2 px-3"
+                                        style="cursor:pointer">buy now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        
+    </section>
+    </section>
+    </main>
+
+    <footer class="w-100 bg-dark text-light"><div class="container py-4 d-flex flex-column flex-md-row justify-content-between gap-2"><span>Â© 2026 Octarian Company</span><a href="index.html" class="text-light text-decoration-none">Kembali ke Beranda</a></div></footer>
+    <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/cart.js"></script>
+    <script>
+        function showToast(message, type = 'success') {
+            const toastElement = document.getElementById('globalToast');
+            const toastBody = document.getElementById('globalToastBody');
+            if (!toastElement || !toastBody) return;
+
+            const toastInstance = bootstrap.Toast.getOrCreateInstance(toastElement);
+            toastElement.className = `toast align-items-center text-bg-${type} border-0`;
+            toastBody.textContent = message;
+            toastInstance.show();
+        }
+
+        function addProductToCart(event) {
+            const button = event && event.currentTarget ? event.currentTarget : null;
+            if (!button) return;
+            if (window.OctarianCart && typeof window.OctarianCart.addFromElement === 'function') {
+                window.OctarianCart.addFromElement(button);
+                showToast('Produk ditambahkan ke keranjang', 'success');
+            }
+        }
+
+        document.addEventListener('click', function (event) {
+            const button = event.target.closest('button');
+            if (!button) return;
+
+            const label = button.textContent.trim().toLowerCase();
+            if (label !== 'buy now') return;
+
+            event.preventDefault();
+            event.stopPropagation();
+            window.location.href = 'pages/product/product-detail.html';
+        }, true);
+    </script>
+
+    <div class="position-fixed top-0 end-0 p-3" style="z-index: 1080;">
+        <div id="globalToast" class="toast align-items-center text-bg-success border-0" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="d-flex">
+                <div id="globalToastBody" class="toast-body">Notifikasi</div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

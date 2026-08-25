@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Now | Octarian Company</title>
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../../bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/30f6dd0952.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="buy-page-body">
+    <header class="buy-page-header py-4">
+        <div class="container">
+            <a href="../../index.html" class="back-link">
+                <i class="fas fa-arrow-left"></i> Kembali ke toko
+            </a>
+            <div class="row align-items-center g-4">
+                <div class="col-lg-7">
+                    <span class="badge bg-warning text-dark mb-3">Limited Edition</span>
+                    <h1 class="display-6 fw-bold mb-3">Ready to own your signature gear?</h1>
+                    <p class="text-muted mb-0">Pilih produk favorit Anda, cek detail, dan lakukan pemesanan dengan
+                        proses yang cepat dan aman.</p>
+                </div>
+                <div class="col-lg-5">
+                    <div class="info-card p-4 shadow-sm">
+                        <h5 class="mb-3">Kenapa beli di Octarian?</h5>
+                        <ul class="feature-list">
+                            <li>Produk resmi dan bergaransi</li>
+                            <li>Pengiriman cepat ke seluruh Indonesia</li>
+                            <li>Dukungan customer service 24/7</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container py-5">
+        <div class="row g-4">
+            <div class="col-lg-8">
+                <div class="buy-summary p-4 shadow-sm">
+                    <div class="row g-4 align-items-center">
+                        <div class="col-md-5 product-visual">
+                            <img src="../../gambar/syncostumes.jpg" alt="Signature guitar product">
+                        </div>
+                        <div class="col-md-7">
+                            <p class="text-muted mb-2">Artist Series</p>
+                            <h2 class="fw-bold mb-3">Synyster Gates Schecter Costume S Diamond</h2>
+                            <p class="text-muted">Gitar signature premium dengan desain eksklusif, suara tajam, dan
+                                kualitas build yang memukau.</p>
+                            <div class="d-flex flex-wrap gap-3 align-items-center mb-3">
+                                <span class="price-tag">Rp 72.000.000</span>
+                                <span class="badge bg-danger">Diskon 20%</span>
+                            </div>
+                            <ul class="feature-list">
+                                <li>Body solid maple dengan finish premium</li>
+                                <li>Pickup high output untuk tone agresif</li>
+                                <li>Include hard case dan sertifikat otentik</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="checkout-card p-4 shadow-sm">
+                    <h4 class="fw-bold mb-4">Checkout</h4>
+                    <form action="buypage.html" class="was-validated">
+                        <div class="mb-3">
+                            <label for="uname" class="form-label">Username:</label>
+                            <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
+                            <div class="valid-feedback">Valid.</div>
+                            <div class="invalid-feedback">Please fill out this field.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="uname" class="form-label">Username:</label>
+                            <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
+                            <div class="valid-feedback">Valid.</div>
+                            <div class="invalid-feedback">Please fill out this field.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Alamat pengiriman</label>
+                            <textarea class="form-control" rows="3" placeholder="Tuliskan alamat lengkap"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Metode pembayaran</label>
+                            <select class="form-control">
+                                <option>Transfer Bank</option>
+                                <option>COD</option>
+                                <option>E-Wallet</option>
+                            </select>
+                            <div class="invalid-feedback">Example invalid select feedback</div>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Konfirmasi Pesanan</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../js/cart.js"></script>
+    <script>
+        const paymentForm = document.querySelector('form');
+        if (paymentForm) {
+            paymentForm.addEventListener('submit', function (event) {
+                event.preventDefault();
+                window.location.href = 'buypage.html?status=done';
+            });
+        }
+    </script>
+</body>
+
+</html>
